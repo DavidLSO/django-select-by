@@ -1,4 +1,4 @@
-function hide_or_not_options(target, parent_value) {
+function select_by(target, parent_value) {
     var _target = "#" + target;
     $(_target).prop('selectedIndex', 0);
     $(_target + ">option").each(function () {

@@ -8,7 +8,7 @@ from django.utils.html import conditional_escape, escape, format_html
 from django.utils.safestring import mark_safe
 
 
-class SelectParent(Select):
+class SelectBy(Select):
     select_by = None
     parent = None
 
@@ -25,7 +25,6 @@ class SelectParent(Select):
         if option_value in selected_choices:
             selected_html = mark_safe(' selected="selected"')
             if not self.allow_multiple_selected:
-                # Only allow for a single selection.
                 selected_choices.remove(option_value)
         else:
             selected_html = ''
