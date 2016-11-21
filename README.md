@@ -5,13 +5,13 @@ Project, which brings a widget, which has the function of loading a select list 
 
 ## Requirements
 1. This project was made for Django projects.
-2. The two fields involved must be linked to by forokeys.
+2. The two fields involved must be linked to by forekeys.
 
 ## Step by step
 1. To install you should use the command `pip install django_select_by`
 2. In your `form.py` file you must import the `django_select_by` lib and used in the field to be populated, it must be of type `ModelChoiceField` using the `SelectBy` widget (select_by = 'bank') passing the parent.
 ```
-import django_select_by
+fromt django_select_by.widget import SelectBy
 
 class MyForm(forms.Form):
    
@@ -22,7 +22,7 @@ class MyForm(forms.Form):
 ```
 3. In your template you must include the file `select_by.js` and use in your change method of the parent field the` select_by` method
 ```
-<script src="{% static 'js/select_by.js' %}"></script>
+<script src="{% static 'select_by.js' %}"></script>
 (function($)
 {
     $('#id_banco').change(function()
