@@ -22,7 +22,8 @@ class MyForm(forms.Form):
 ```
 3. In your template you must include the file `select_by.js` and use in your change method of the parent field the` select_by` method
 ```
-<script src="{% static 'select_by.js' %}"></script>
+{% include 'django_select_by/select_by.html' %}
+
 (function($)
 {
     $('#id_banco').change(function()
