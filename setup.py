@@ -8,4 +8,4 @@ setup(name='django-select-by',
       author_email='sdavidlevy@gmail.com',
       license='MIT License',
       packages=['django_select_by'],
-      zip_safe=False)
+      zip_safe=False, requires=['django'])
