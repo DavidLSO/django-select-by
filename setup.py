@@ -6,6 +6,6 @@ setup(name='django-select-by',
       url='https://github.com/DavidLSO/django-select-by',
       author='David Levy Sousa Oliveira',
       author_email='sdavidlevy@gmail.com',
-      license='MIT',
+      license='MIT License',
       packages=['django_select_by'],
       zip_safe=False)
